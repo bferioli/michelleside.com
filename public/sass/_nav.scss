@@ -1,0 +1,30 @@
+nav#projects
+	height: 100%
+	position: relative
+	ul
+		margin: 0
+		padding: 0
+		list-style: none
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		-webkit-transform: translateY(-50%)
+		&:hover li
+			height: 3rem
+			.label
+				line-height: 3rem
+			&:hover
+				height: 15rem
+	li
+		font-size: 1.2rem
+		height: 6rem
+		overflow: hidden
+		-webkit-transition: height 100ms linear
+		&:hover .plus
+			color: red
+		.label
+			-webkit-transition: line-height 100ms linear
+			line-height: 6rem
+	a
+		color: $black
+		text-decoration: none

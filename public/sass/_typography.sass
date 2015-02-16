@@ -1,0 +1,49 @@
++font-face("PFDinTextCondPro-Thin", font-files("/fonts/2D5D1D_1_0.eot", "/fonts/2D5D1D_1_0.eot?#iefix", "/fonts/2D5D1D_1_0.woff", "/fonts/2D5D1D_1_0.ttf"))
+
++font-face("PFDinTextCondPro-Light", font-files("/fonts/2D5D1D_0_0.eot", "/fonts/2D5D1D_0_0.eot?#iefix", "/fonts/2D5D1D_0_0.woff", "/fonts/2D5D1D_0_0.ttf"))
+
++font-face("PFDinTextCondPro-LightItalic", font-files("/fonts/2D5D1E_1_0.eot", "/fonts/2D5D1E_1_0.eot?#iefix", "/fonts/2D5D1E_1_0.woff", "/fonts/2D5D1E_1_0.ttf"))
+
++font-face("PFDinTextCondPro-Bold", font-files("/fonts/2D5D1E_0_0.eot", "/fonts/2D5D1E_0_0.eot?#iefix", "/fonts/2D5D1E_0_0.woff", "/fonts/2D5D1E_0_0.ttf"))
+
+
+$sans-thin: "PFDinTextCondPro-Thin"
+$sans-light: "PFDinTextCondPro-Light"
+$sans-light-italic: "PFDinTextCondPro-LightItalic"
+$sans-bold: "PFDinTextCondPro-Bold"
+
+
+body
+	color: #fff
+	font-family: $sans-light
+	text-transform: uppercase
+	letter-spacing: 0.05em
+	-webkit-font-smoothing: antialiased
+
+a
+	color: #de8aea
+	text-decoration: none
+	&:hover
+		color: #ac6bb5
+
+header
+	h1
+		font-family: $sans-thin
+		font-size: 2rem
+		font-weight: normal
+		letter-spacing: 0
+		margin: 0
+		a
+			color: #fff
+			text-decoration: none
+	h2
+		color: #ad8cb2
+		font-family: $sans-bold
+		font-size: 0.8rem
+		font-weight: normal
+		letter-spacing: 0
+		margin: 0
+
+footer
+	font-size: 0.8rem
+	text-align: center

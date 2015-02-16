@@ -1,0 +1,64 @@
+nav#projects
+	position: relative
+	ul
+		list-style: none
+
+	li
+		font-size: 1.2rem
+		height: 6rem
+		overflow: hidden
+		-webkit-transform: translateZ(0)
+		transition: height 150ms linear
+		-moz-transition: height 150ms linear
+		-webkit-transition: height 150ms linear
+
+	ul:hover li
+		height: 3rem
+		.label
+			line-height: 3rem
+		&:hover
+			height: 15rem
+
+	.label
+		-webkit-transform: translateZ(0)
+		transition: line-height 150ms linear
+		-moz-transition: line-height 150ms linear
+		-webkit-transition: line-height 150ms linear
+		line-height: 6rem
+
+	.plus
+		font-size: 1.6rem
+		position: relative
+		top: 0.075rem
+		-webkit-transform: translateZ(0)
+		transition: all 150ms linear
+		-moz-transition: all 150ms linear
+		-webkit-transition: all 150ms linear
+
+	.preview
+		height: 12rem
+		overflow: hidden
+		opacity: 0
+		-webkit-transform: translateZ(0)
+		transition: opacity 300ms linear
+		-moz-transition: opacity 300ms linear
+		-webkit-transition: opacity 300ms linear
+		p
+			margin: 0
+		img
+			float: left
+			height: 12rem
+			margin: 0 1rem 1rem 0
+
+	li:hover
+		.plus
+			color: #DE8AEA
+			transform: rotate(90deg)
+			-moz-transform: rotate(90deg)
+			-webkit-transform: rotate(90deg)
+		.preview
+			opacity: 1
+
+	a
+		color: #fff
+		text-decoration: none
