@@ -16,6 +16,7 @@
 	<title>{% if title is defined %}{{ title }} - {% endif %}{{ siteName }}</title>
 	<link rel="home" href="{{ siteUrl }}" />
 	<link rel="stylesheet" href="{{ siteUrl }}css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -33,7 +34,7 @@
 		{% endblock %}
 
 		<footer id="footer">
-			Copyright {{ now.year }} {{ siteName }}. All rights reserved  •  Built with <a href="http://buildwithcraft.com">Craft</a>
+			Copyright {{ now.year }} {{ siteName }}. All rights reserved  •  Developed by <a href="http://brandonferioli.com">Brandon Ferioli</a>
 		</footer>
 	</div>
 	<script type="text/javascript" src="{{ siteUrl }}js/jquery.min.js"></script>
