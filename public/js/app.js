@@ -1,33 +1,41 @@
 var App = {
-	navTimeout: null,
-	headerSlideUp: function() {
-		this.header.css({
-			'top': '0',
-			'margin-top': '0'
+	dom: {},
+	fancyboxOptions: {
+		helpers:  {
+			overlay : {
+				css : {
+					'background' : 'transparent'
+				}
+			},
+			title : {
+				type : 'inside'
+			}
+		}
+	},
+	prepareGalleries: function() {
+		var self = this;
+		this.dom.galleries.each(function(i){
+			var gallery = $(this),
+				items = gallery.find('img');
+
+			items.each(function(){
+				var url = this.src,
+					title = this.alt,
+					linkEl = $('<a rel="gallery' + i + '" href="' + url + '" title="' + title + '">' + this.outerHTML + '</a>');
+
+				$(this).replaceWith(linkEl);
+			});
+
+			var links = gallery.find('a');
+			links.fancybox(self.fancyboxOptions);
 		});
 	},
-	headerSlideDown: function() {
-		this.header.removeAttr('style');
-	},
-	navMouseEnter: function() {
-		if (this.navTimeout) {
-			window.clearTimeout(this.navTimeout);
-			this.navTimeout = null;
-		}
-		this.headerSlideUp();
-	},
-	navMouseLeave: function() {
-		var self = this;
-		this.navTimeout = window.setTimeout(function(){
-			self.headerSlideDown();
-		}, 150);
-	},
 	initialize: function() {
-		this.header = $('header');
-		this.nav = $('nav#projects ul');
+		this.dom.header = $('header');
+		this.dom.nav = $('nav#projects ul');
+		this.dom.galleries = this.dom.nav.find('.gallery');
 
-		this.nav.on('mouseenter', $.proxy(this.navMouseEnter, this));
-		this.nav.on('mouseleave', $.proxy(this.navMouseLeave, this));
+		this.prepareGalleries();
 	}
 };
 

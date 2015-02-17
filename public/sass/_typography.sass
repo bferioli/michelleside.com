@@ -14,17 +14,16 @@ $sans-bold: "PFDinTextCondPro-Bold"
 
 
 body
-	color: #fff
+	color: $black
 	font-family: $sans-light
-	text-transform: uppercase
 	letter-spacing: 0.05em
 	-webkit-font-smoothing: antialiased
 
 a
-	color: #de8aea
+	color: $link
 	text-decoration: none
 	&:hover
-		color: #ac6bb5
+		color: $link-hover
 
 header
 	h1
@@ -33,16 +32,24 @@ header
 		font-weight: normal
 		letter-spacing: 0
 		margin: 0
+		text-transform: uppercase
 		a
-			color: #fff
+			color: $black
 			text-decoration: none
 	h2
-		color: #ad8cb2
+		color: $med-grey
 		font-family: $sans-bold
 		font-size: 0.8rem
 		font-weight: normal
 		letter-spacing: 0
-		margin: 0
+		margin: 0 0 0.5rem
+		text-transform: uppercase
+		a
+			border-bottom: 1px dotted $link
+
+.separator
+	color: $light-grey
+	font-family: $sans-bold
 
 footer
 	font-size: 0.8rem

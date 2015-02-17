@@ -1,4 +1,4 @@
-#background, #overlay
+#background, #background:after
 	position: fixed
 	top: 0
 	right: 0
@@ -6,7 +6,7 @@
 	left: 0
 
 #background
-	background-image: url('/images/backgrounds/purple.jpg')
+	background-image: url('/images/backgrounds/scratched.jpg')
 	background-position: center center
 	background-size: cover
 	-webkit-filter: blur(5px)
@@ -16,6 +16,7 @@
 	filter: blur(5px)
 	z-index: -2
 
-#overlay
-	background-color: rgba(0, 0, 0, 0.7)
+#background:after
+	background-color: $white-translucent
+	content: " "
 	z-index: -1

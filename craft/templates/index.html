@@ -24,12 +24,10 @@
 		<ul>
 			{% for entry in craft.entries.section('projects').order('postDate asc').limit(4) %}
 				<li>
-					<a href="{{ entry.url }}">
-						<div class="label"><span class="plus">+</span> {{ entry.title }}</div>
-						<div class="preview">
-							{{ entry.body }}
-						</div>
-					</a>
+					<div class="label"><span class="plus">+</span> {{ entry.title }}</div>
+					<div class="gallery">
+						{{ entry.body }}
+					</div>
 				</li>
 			{% endfor %}
 		</ul>
