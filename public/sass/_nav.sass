@@ -1,59 +1,59 @@
 nav#projects
-	position: relative
-	ul
-		list-style: none
-		max-width: 100%
+  position: relative
+  ul
+    list-style: none
+    max-width: 100%
 
-	li
-		font-size: 1.2rem
-		height: 6rem
-		overflow: hidden
-		+transform(translateZ(0))
-		+transition(height 150ms linear)
+  li
+    font-size: 1.2rem
+    height: 6rem
+    overflow: hidden
+    +transform(translateZ(0))
+    +transition(height 150ms linear)
 
-	ul:hover li
-		height: 3rem
-		.label
-			line-height: 3rem
-		&:hover
-			height: 15rem
+  ul:hover li
+    height: 3rem
+    .label
+      line-height: 3rem
+    &:hover
+      height: 15rem
 
-	.label
-		+transform(translateZ(0))
-		+transition(line-height 150ms linear)
-		line-height: 6rem
+  .label
+    +transform(translateZ(0))
+    +transition(line-height 150ms linear)
+    line-height: 6rem
 
-	.plus
-		font-size: 1.6rem
-		position: relative
-		top: 0.075rem
-		+transform(translateZ(0))
-		+transition(all 150ms linear)
+  .plus
+    font-size: 1.6rem
+    position: relative
+    top: 0.075rem
+    +transform(translateZ(0))
+    +transition(all 150ms linear)
 
-	.gallery
-		height: 12rem
-		opacity: 0
-		+transform(translateZ(0))
-		+transition(opacity 300ms linear)
-		p
-			margin: 0
-			white-space: nowrap
-			overflow-x: scroll
-			overflow-y: hidden
-			-webkit-overflow-scrolling: touch
-		a
-			display: inline-block
-			margin: 0 1rem 1rem 0
-		img
-			height: 12rem
+  .gallery
+    height: 12rem
+    opacity: 0
+    +transform(translateZ(0))
+    +transition(opacity 300ms linear)
+    p
+      margin: 0
+      white-space: nowrap
+      overflow-x: scroll
+      overflow-y: hidden
+      -webkit-overflow-scrolling: touch
+    a
+      display: inline-block
+      margin: 0 1rem 1rem 0
+    img
+      height: 12rem
 
-	li:hover
-		.plus
-			color: $med-grey
-			+transform(rotate(90deg))
-		.gallery
-			opacity: 1
+  li:hover
+    .plus
+      color: $med-grey
+      +transform(rotate(90deg))
+    .gallery
+      opacity: 1
 
-	a
-		color: $black
-		text-decoration: none
+  a
+    color: $black
+    text-decoration: none
