@@ -8,6 +8,7 @@ nav#projects
     font-size: 1.2rem
     height: 6rem
     overflow: hidden
+    text-transform: lowercase
     +transform(translateZ(0))
     +transition(height 150ms linear)
 
@@ -24,6 +25,7 @@ nav#projects
     line-height: 6rem
 
   .plus
+    color: $pink
     font-size: 1.6rem
     position: relative
     top: 0.075rem
@@ -49,7 +51,6 @@ nav#projects
 
   li:hover
     .plus
-      color: $med-grey
       +transform(rotate(90deg))
     .gallery
       opacity: 1

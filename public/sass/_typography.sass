@@ -1,21 +1,10 @@
-+font-face("PFDinTextCondPro-Thin", font-files("/fonts/2D5D1D_1_0.eot", "/fonts/2D5D1D_1_0.eot?#iefix", "/fonts/2D5D1D_1_0.woff", "/fonts/2D5D1D_1_0.ttf"))
-
-+font-face("PFDinTextCondPro-Light", font-files("/fonts/2D5D1D_0_0.eot", "/fonts/2D5D1D_0_0.eot?#iefix", "/fonts/2D5D1D_0_0.woff", "/fonts/2D5D1D_0_0.ttf"))
-
-+font-face("PFDinTextCondPro-LightItalic", font-files("/fonts/2D5D1E_1_0.eot", "/fonts/2D5D1E_1_0.eot?#iefix", "/fonts/2D5D1E_1_0.woff", "/fonts/2D5D1E_1_0.ttf"))
-
-+font-face("PFDinTextCondPro-Bold", font-files("/fonts/2D5D1E_0_0.eot", "/fonts/2D5D1E_0_0.eot?#iefix", "/fonts/2D5D1E_0_0.woff", "/fonts/2D5D1E_0_0.ttf"))
-
-
-$sans-thin: "PFDinTextCondPro-Thin"
-$sans-light: "PFDinTextCondPro-Light"
-$sans-light-italic: "PFDinTextCondPro-LightItalic"
-$sans-bold: "PFDinTextCondPro-Bold"
+$sans: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 
 body
   color: $black
-  font-family: $sans-light
+  font-family: $sans
+  font-weight: 300
   letter-spacing: 0.05em
   -webkit-font-smoothing: antialiased
 
@@ -27,30 +16,35 @@ a
 
 header
   h1
-    font-family: $sans-thin
+    font-family: $sans
     font-size: 2rem
     font-weight: normal
     letter-spacing: 0
     margin: 0
-    text-transform: uppercase
-    a
-      color: $black
+    text-transform: lowercase
+    a.logo
+      background: url('/images/m-logo.png') center center no-repeat
+      background-size: cover
+      width: 8.75rem
+      height: 5.625rem
       text-decoration: none
   h2
-    color: $med-grey
-    font-family: $sans-bold
+    font-family: $sans
     font-size: 0.8rem
     font-weight: normal
     letter-spacing: 0
     margin: 0 0 0.5rem
-    text-transform: uppercase
+    text-transform: lowercase
     a
       border-bottom: 1px dotted $link
+    .bold
+      font-weight: 600
 
 .separator
-  color: $light-grey
-  font-family: $sans-bold
+  color: $pink
+  font-family: $sans
 
 footer
   font-size: 0.8rem
   text-align: center
+  text-transform: lowercase

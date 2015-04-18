@@ -15,6 +15,7 @@
 	<meta charset="utf-8" />
 	<title>{% if title is defined %}{{ title }} - {% endif %}{{ siteName }}</title>
 	<link rel="home" href="{{ siteUrl }}" />
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="{{ siteUrl }}css/jquery.fancybox.css">
 	<link rel="stylesheet" href="{{ siteUrl }}css/style.css">
 	<script data-main="js/main" src="{{ siteUrl }}js/lib/require.js"></script>
@@ -22,18 +23,17 @@
 </head>
 
 <body>
-	<div id="background"></div>
 	<div id="container">
 		<header id="header">
-			<h1><a href="{{ siteUrl }}">{{ siteName }}</a></h1>
+			<h1><a href="{{ siteUrl }}" class="logo" title="Michelle Side"></a></h1>
 			<h2>
+				<span class="bold">{{ siteName }}</span>
+				<span class="separator">  /  </span>
 				Art Direction + Design
-				<span class="separator">  \  </span>
-				BOS + NYC
-				<span class="separator">  \  </span>
+				<span class="separator">  /  </span>
+				Boston based, New York raised
+				<span class="separator">  /  </span>
 				<a href="maito:mside915@gmail.com">mside915@gmail.com</a>
-				<span class="separator">  \  </span>
-				631.871.7327
 			</h2>
 		</header>
 
@@ -41,8 +41,8 @@
 		{% endblock %}
 
 		<footer id="footer">
-			Copyright {{ now.year }} {{ siteName }}. All rights reserved
-			<span class="separator">  \  </span>
+			Copyright {{ now.year }} {{ siteName }}
+			<span class="separator">  /  </span>
 			Developed by <a href="http://brandonferioli.com">Brandon Ferioli</a>
 		</footer>
 	</div>
